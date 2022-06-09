@@ -260,6 +260,7 @@ The purpose is two-fold:
   - Revisit the scope of the next 1-2 sprints: Reconsider how much can be done 
 <br/>
 <br/>
+
    ### **The sprint minutes of meeting (MoM)**
    
    **What is Sprint MoM?**
@@ -273,11 +274,13 @@ so that we can always go back and find minutes.
    - To inform everybody about decisions taken on the meetings
    <br/>
 <br/>
+
 ### **Sprint cycle**
 
 The 2-week sprint cycle encompasses the following activities. 
    <br/>
 <br/>
+
 ### **Specification**<br/>
 
 Write down specifications so that developers can implement the desired features. There are no hard rules about how<br/> this is approached and the following is just ideas: 
@@ -286,6 +289,7 @@ Write down specifications so that developers can implement the desired features.
    - The specification can be high-level or low-level and technical or non-technical
       <br/>
 <br/>
+
 ### **Task break-down and delegation**<br/>
 
 Split the work in tickets.
@@ -303,6 +307,7 @@ If tasks requires coordination among developers, you have to handle that part. H
     - Arrange a meeting with the involved developers. 
    <br/>
 <br/>
+
 ### **Verification and feedback**<br/>
 The lead is the most important person to verify implemented features and give feedback. The following are core<br/> principles around verification and feedback: 
   - the lead need to spend considerable amount of time on testing during the sprint. 
@@ -310,16 +315,19 @@ The lead is the most important person to verify implemented features and give fe
   - the lead must both verify behavior and quality
    <br/>
 <br/>
+
 ### **Test case and seed data development**<br/>
 As part of the sprint cycle manual test-cases must be written, either by the lead or by some other member of the team. Test-cases should be written in a way that effectively tests the system with a minimum of effort. 
 
 Test-cases will also allow new-comers to quickly learn about how the platform works. 
    <br/>
 <br/>
+
 ### **Regression testing**<br/>
 As part of the release process the lead must make sure proper regression testing is performed on each release.<br/> If possible automation should take care of the regression testing as much as possible. 
    <br/>
 <br/>
+
 ### **Releasing**<br/>
 Part of the sprint is to release new versions of the software. The release typically happens in the end of the sprint.
 <br/>
