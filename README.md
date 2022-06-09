@@ -150,12 +150,30 @@ In order to protect the due date and minimize the risk in the project, we add a 
 Buffer sprints may still hold high-level sprint goals such as “GO-LIVE” or “Preprod env working”
 
 ## Working against soft and hard due dates
+Whenever we work in project mode (see  [Product vs project - modes of working](##Product-vs-project-modes-of-working)) the end date of the project is by definition a hard due date. 
 
-Dependencies, risks and decisions
+When we work in product mode it is a different matter. Not all due dates are equally critical.
+
+This page explains the differences. 
+
+## Dependencies, risks and decisions
 
 # Project management practices
 
 ## Introduction to the lead role and the sprint cycle
+### **The sprint meeting**
+
+The sprint meeting is a crucial part of our development process. It marks the end of a sprint and the beginning of a new sprint.
+
+A **Sprint Report** is sent out before the meeting and a **Sprint Meeting Summary** is sent out immediately after. Let us go through the three parts: report - meeting - summary. 
+   - The sprint report
+     - Purpose of the sprint report
+
+
+
+   - A sprint meeting is performed with the following agenda: 
+
+     - Demo - presenting what has been achieved
 
 ## Estimates
 
