@@ -260,29 +260,29 @@ The purpose is two-fold:
   - Revisit the scope of the next 1-2 sprints: Reconsider how much can be done 
 <br/>
 <br/>
-   ### **The sprint minutes of meeting (MoM)**
+   ### **The sprint minutes of meeting (MoM)**<br/>
    **What is Sprint MoM?**<br/>
 A brief email containing all the notes taken during the sprint meeting. The minutes are also saved on Confluence<br/> 
 so that we can always go back and find minutes. 
 
-**Purpose of the sprint MoM**
+**Purpose of the sprint MoM**<br/>
    - To clearly inform about the updated project plans so that the risk of future misunderstanding are minimized. 
    - To clearly inform about follow-up actions expected from people outside the delivery team. 
    - To inform everybody about decisions taken on the meetings
    <br/>
 <br/>
-### **Sprint cycle**
+### **Sprint cycle**<br/>
 The 2-week sprint cycle encompasses the following activities. 
    <br/>
 <br/>
-### **Specification**
+### **Specification**<br/>
 Write down specifications so that developers can implement the desired features. There are no hard rules about how<br/> this is approached and the following is just ideas: 
    - The specification can be written directly into tickets/cards
    - The specification can be written on Confluence pages and tickets can refer to them. 
    - The specification can be high-level or low-level and technical or non-technical
       <br/>
 <br/>
-### **Task break-down and delegation**
+### **Task break-down and delegation**<br/>
 Split the work in tickets.
 
 Find out which developers should be involved in which tasks and assign priority. Delegation is normally most<br/> efficiently done by the lead splitting tasks on developers but other approaches can work as well (for instance<br/> developers picking themselves from a board). 
@@ -305,17 +305,17 @@ The lead is the most important person to verify implemented features and give fe
   - the lead must both verify behavior and quality
    <br/>
 <br/>
-### **Test case and seed data development**
+### **Test case and seed data development**<br/>
 As part of the sprint cycle manual test-cases must be written, either by the lead or by some other member of the team. Test-cases should be written in a way that effectively tests the system with a minimum of effort. 
 
 Test-cases will also allow new-comers to quickly learn about how the platform works. 
    <br/>
 <br/>
-### **Regression testing**
+### **Regression testing**<br/>
 As part of the release process the lead must make sure proper regression testing is performed on each release.<br/> If possible automation should take care of the regression testing as much as possible. 
    <br/>
 <br/>
-### **Releasing**
+### **Releasing**<br/>
 Part of the sprint is to release new versions of the software. The release typically happens in the end of the sprint.
 <br/>
 <br/>
