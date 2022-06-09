@@ -150,7 +150,7 @@ In order to protect the due date and minimize the risk in the project, we add a 
 Buffer sprints may still hold high-level sprint goals such as “GO-LIVE” or “Preprod env working”
 
 ## Working against soft and hard due dates
-Whenever we work in project mode (see  [Product vs project - modes of working](##Product-vs-project-modes-of-working)) the end date of the project is by definition a hard due date. 
+Whenever we work in project mode (see  [Product vs project - modes of working](##-Product-vs-project-modes-of-working)) the end date of the project is by definition a hard due date. 
 
 When we work in product mode it is a different matter. Not all due dates are equally critical.
 
