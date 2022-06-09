@@ -165,6 +165,23 @@ This page explains the differences.
 The following diagram illustrates the differences between the two different kinds of due dates. 
 ![diagram1](download.png)
 
+The criticality of due dates is of course a spectrum ranging from a very soft due date to a very hard due date. The following diagram illustrates this idea: 
+![diagram2](download1.png)
+It is crucial that the lead and the entire team understand when we deal with very hard due dates. The importance of reaching these due dates is several orders of magnitude more important than meeting the very soft due dates. Understanding the difference allows us to apply our focus, energy and determination when it matters the most. 
+
+Very hard due dates are often called must-win battles or Messi-moments. It takes a tremendous amount of talent and determination to meet fixed due dates in complex software projects. 
+<style>
+img
+{
+    display:block; 
+    float:none; 
+    margin-left:auto;
+    margin-right:auto;
+    width:60%;
+}
+</style> 
+![messi](messi.png?style=centerme)
+
 ## Dependencies, risks and decisions
 
 # Project management practices
