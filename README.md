@@ -260,22 +260,26 @@ The purpose is two-fold:
   - Revisit the scope of the next 1-2 sprints: Reconsider how much can be done 
 <br/>
 <br/>
-   ### **The sprint minutes of meeting (MoM)**<br/>
-   **What is Sprint MoM?**<br/>
+   ### **The sprint minutes of meeting (MoM)**
+   
+   **What is Sprint MoM?**
+   
 A brief email containing all the notes taken during the sprint meeting. The minutes are also saved on Confluence<br/> 
 so that we can always go back and find minutes. 
 
-**Purpose of the sprint MoM**<br/>
+**Purpose of the sprint MoM**
    - To clearly inform about the updated project plans so that the risk of future misunderstanding are minimized. 
    - To clearly inform about follow-up actions expected from people outside the delivery team. 
    - To inform everybody about decisions taken on the meetings
    <br/>
 <br/>
-### **Sprint cycle**<br/>
+### **Sprint cycle**
+
 The 2-week sprint cycle encompasses the following activities. 
    <br/>
 <br/>
 ### **Specification**<br/>
+
 Write down specifications so that developers can implement the desired features. There are no hard rules about how<br/> this is approached and the following is just ideas: 
    - The specification can be written directly into tickets/cards
    - The specification can be written on Confluence pages and tickets can refer to them. 
@@ -283,22 +287,23 @@ Write down specifications so that developers can implement the desired features.
       <br/>
 <br/>
 ### **Task break-down and delegation**<br/>
+
 Split the work in tickets.
 
 Find out which developers should be involved in which tasks and assign priority. Delegation is normally most<br/> efficiently done by the lead splitting tasks on developers but other approaches can work as well (for instance<br/> developers picking themselves from a board). 
       <br/>
 <br/>
 
-### **Coordination**
+### **Coordination**<br/>
 If tasks requires coordination among developers, you have to handle that part. Here are some thoughts about how that is done: 
   - Prefer peer-to-peer communication over group communication. Hence, don’t use daily meetings for such things. <br/>Consider more light-weight approaches such as: 
     - Create a slack-thread with the two involved developers and ask them to coordinate. 
     - Write in the ticket to one developer “Ping Peter when you get to this ticket to get further explanation”
     - Write in the ticket “WAIT FOR OK FROM PETER” to indicate that the ticket is waiting for some other person to do<br/>  some thing. 
     - Arrange a meeting with the involved developers. 
-          <br/>
+   <br/>
 <br/>
-### **Verification and feedback**
+### **Verification and feedback**<br/>
 The lead is the most important person to verify implemented features and give feedback. The following are core<br/> principles around verification and feedback: 
   - the lead need to spend considerable amount of time on testing during the sprint. 
   - developers need to deliver code continuously throughout the sprint to avoid verification to be piled up. 
