@@ -363,10 +363,10 @@ The next diagram illustrates the idea that some tasks have a large variability (
 
 ![graph3](download5.png)
 <br/>
-
+<br/>
 ## Typical tasks for a project lead
 
-Development - During the Sprints in which we are developing new features, development tasks occupies majority of my time, I would say 75-85%. But even in the Sprints that are not focused on the development, I try to deliver new features. Sometimes those are new things in the admin panel, sometimes those are the features we didn't have time to implement sooner and sometimes it is the improvement of the existing features, so I would say it is around 40% of time in those Sprints also.
+Development - During the Sprints in which we are developing new features, development tasks occupies majority of my time, <br/>I would say 75-85%. But even in the Sprints that are not focused on the development, I try to deliver new features.<br/> Sometimes those are new things in the admin panel, sometimes those are the features we didn't<br/> have time to implement sooner and sometimes it is the improvement of the existing features, so I would say it is around 40%<br/> of time in those Sprints also.
 
 Top tasks in the development category would be:
   - Creating specifications for developers
@@ -394,6 +394,26 @@ Top tasks in the development category would be:
   - Writing minutes of meetings after sprint meetings.
   - Improve charts in Kibana
   - Troubleshooting issues from Kibana logs
+
+  Bug fixing - We are trying to fix more critical bugs as soon as they are discovered. In Sprints that are not so development focused,<br/> we are fixing the minor bugs from the backlog. It is a bit hard to tell how much time I spent on this since bugs are usual side effect<br/> of development process so fixing them along the way falls under the development. I would say I am spending around 5-10% of time<br/> on fixing of stand alone bugs during development Sprints and probably 15-20% of time during non development Sprints.
+
+  Top tasks in bug fixing category would be:
+  - Reproducing reported bugs, so I can create a clear set of steps to reproduce the bug
+  - Trying to understand the origin of the bug, so I can create more detailed task for fixing it
+  - Creating tasks
+  - Verifying if the bug is really fixed
+  - Adding test case that covers bug (if possible)
+
+  Maintenance and support - I try to minimize the number of these tasks during development Sprints. <br/> So I try to keep them as low as possible and then to solve them during non development Sprints. <br/>Usually after releasing a new feature set, in the following 2-3 Sprints, number of these tasks intensifies. <br/>I try to spend under 10% of time on these tasks during development Sprints.
+
+Top tasks in Maintenance and support would be:
+
+  - Fixing all sorts of customer related issues (The root cause for majority of these issues is Gigya, <br/>especially the fact we used lite accounts.)
+  - Providing stakeholders with statistics and data
+  - Going through existing test cases and updating them
+  - Helping stakeholders with data preparation
+  <br/>
+  <br/>
 
 ## More about the sprint meeting
 
