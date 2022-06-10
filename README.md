@@ -543,11 +543,89 @@ The template is self-explanatory but here are a couple of additional advices:
 
 ## The quality assurance approach
 
+<br/>
+<br/>
+
 ## Manual test cases
+
+We use manual test cases to do the kind of testing of a platform that cannot be automated.  In this article,<br/> when we say 'test cases' we mean manual test cases. 
+
+Test cases should be: 
+-  **efficient:** Test cases should maximize the coverage of the system while minimizing the effort needed to carry them out. 
+-  **concrete:** Test cases should mention concrete values of actions you do, input you give, output you validate<br/> etc. to ensure that test cases are deterministic. 
+-  **creative:** Find clever ways of testing things quicker through "dirty tricks" like:
+      - DevSupport (hidden menus with special functions)  
+      - time travelling - manage the system time and create the ability to forward and reset the time of the system
+      - logging of events in ELK or Application Insight. One example is an order flow where you search the logs for<br/> the orderId and hence verify the system behavior through logs. 
+-  **semi-automated:** Don't see automated and manual testing as opposites. Often a very good result can be obtained<br/> in between. You might have ways of invoking small automated sequences of steps inside the system that can help you move faster. 
+- **based on carefully crafted test data that are seeded into all environments (excluding production):** <br/>Make sure you prepare the right data in the right environments so that time needed to bring the system<br/> into the right state is minimized. For instance, if you need to check the behavior for 10 different user roles,<br/> make sure you have 10 different predefined users with the correct roles and easy to remember name and login. 
+- **enabler of automation:** robust and maintainable automated end-to-end tests (like Selenium or Cypress) are<br/> built on top of efficient manual test-cases. Hence automation of end-to-end tests should be done after a foundation<br/> of efficient manual tests have been created. 
+
+<br/>
+When manual test cases are done right they provide: 
+
+- An efficient way for you to verify that nothing is broken during releasing
+- An efficient way for newcomers to the project to learn about the platform
+- A valuable source about how the system actually works. User manuals can easily be written using the test cases as a starting point. 
+- Automation of UI tests can be done using the foundation created by the test cases as automated UI tests rely on the same ideas<br/> of high-quality test data.
+
+To create efficient manual test-cases you often have to: 
+- Mock out external API’s or at least make it possible to run a certain environment in mock-mode
+- Create easy back-doors for non-production environment that will allow you to login with a click (not a real login)
+<br/>
+<br/>
 
 ## The daily meeting
 
+The purpose of the daily meeting is to create the optimal single point of contact for the whole team. <br/>The daily meeting can be used in any way the team thinks makes sense, but here are the common principles: 
+-  We like to have a focus on what tasks are DONE as it:
+      - creates a clear feeling of progress      
+      - allow us to do quick demonstrations on the meeting and give immediate  feedback    
+      - allow people to try it out right after the meeting
+-  We do not talk about what each person is in the middle of doing as it would double the time spent talking about each task<br/> (as we also would mention it when it was done).
+-  We do not talk about what issues individual developers has, as issues are addresses and handled continuously during the day.
+-  People may mention issues they are facing but mostly to agree on "after-meetings" which are short meetings held right after<br/> the daily meeting with fewer participants. 
+-  We do not talk about tasks waiting to be started because: 
+      - It would double the time spent on talking about each task (because we also talk about it when it is done) 
+      - extra input for the tasks should be requested continuously and outside the meeting   
+      - there is a risk that tasks waiting to be started will never get priority. 
+<br/>
+<br/>
+
 ## About Minutes of Meetings (MoM)
+### **Introduction**<br/>
+This page describes what role Minutes of Meetings plays in Sprinting Software and the practices around it.
+
+### **Purpose of minutes**<br/>
+We use minutes as a key ingredient of stakeholder management. The idea is this: 
+
+- Take leadership in meetings by defining key take-aways from the meetings
+- Be in control of what actions and decision are taken out of the meeting
+- Show proactivity and insist on that meetings should produce an outcome
+- Make sure to have documentation well preserved
+
+### **Practices**<br/>
+On meetings the minutes plays a central role in the stakeholder management. The following should be noted:
+- The minutes are used to write down various take-aways from the sprint meeting
+- Minutes should be written down while the participants see it so that they are validated on the meeting and we have no further<br/> processing of them in the hindsight.
+- The minutes should be preserved on Google Doc or Confluence. I recommend using one long page getting longer<br/> and longer where new minutes are added on the top. 
+- Using Confluence or Google Doc has the advantage that minutes can be written collaboratively which sometimes is handy. 
+
+### **Structure of MoM**<br/>
+
+It can be helpful to keep a consistent structure on MoM. One possible structure is this: 
+-  **Immediate TODOs:** Any actions for immediate follow-up identified on the meeting. Please note that this does not include: 
+      - tasks for the development team as these should either be left-overs or added somewhere in the workbook for<br/> future sprints   
+      - future tasks for future sprints as these should be added somewhere in the workbook, for instance as a dependency<br/> (if the task is outside the Sprinting team) or as a story/task/requrement in the feature sections.
+- **Decisions:** key questions discussed and agreed upon on the meeting. The same decision could be added to the decision<br/> log in the workbook if you see some future dispute coming from it. 
+- **Discussion points:** Anything that doesn’t fit the above.
+
+If you are on a sprint meeting you may have this additional section: 
+- **Left-overs:** this section is only relevant if you demonstrate stuff on the sprint meeting, as any demonstration of the software<br/> tends to produce “left-overs” (things we can improve). The good thing about having such a section is that it is a relief for both<br/> stakeholders and the lead to be able to note down any detail about the delivered software that doesn’t seem perfect.<br/> Left-overs should be prioritized before the end of the meeting so that it is clear what should be fixed in the coming sprint and<br/> what should not. 
+
+As a lead you can grow your own habits around the process and you can find your own MoM structure for sprint meetings.<br/> The above is only one suggestions. 
+<br/>
+<br/>
 
 # About documentation
 
