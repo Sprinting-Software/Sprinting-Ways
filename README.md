@@ -171,7 +171,7 @@ It is crucial that the lead and the entire team understand when we deal with ver
 
 Very hard due dates are often called must-win battles or Messi-moments. It takes a tremendous amount of talent and determination to meet fixed due dates in complex software projects. 
 
-![messi](messi.png?style=centerme)
+![messi](messi.png)
 <br/>
 
 ## Dependencies, risks and decisions
@@ -317,7 +317,7 @@ The lead is the most important person to verify implemented features and give fe
 <br/>
 
 ### **Test case and seed data development**<br/>
-As part of the sprint cycle manual test-cases must be written, either by the lead or by some other member of the team. Test-cases should be written in a way that effectively tests the system with a minimum of effort. 
+As part of the sprint cycle manual test-cases must be written, either by the lead or by some other member of the team.<br/> Test-cases should be written in a way that effectively tests the system with a minimum of effort. 
 
 Test-cases will also allow new-comers to quickly learn about how the platform works. 
    <br/>
@@ -332,9 +332,68 @@ As part of the release process the lead must make sure proper regression testing
 Part of the sprint is to release new versions of the software. The release typically happens in the end of the sprint.
 <br/>
 <br/>
+
 ## Estimates
+When we deal with estimates for software development tasks, it is important to understand that many tasks in<br/> software development have a large amount of variability. By variability of a task we mean the uncertainty in time<br/> needed to complete the task. Task variability comes from various sources including: 
+  - Two tasks are almost never the same when dealing with software. Hence we don’t really have emperical knowledge<br/> to rely upon.  
+  - The task may be underspecified which may hide some complexity of the task
+  - Often we have “unplanned work” coming from external factors such as environment issues, build issues etc. 
+  - Sometimes the scope of a task is inflated by the good intentions of the product owner and the team itself. 
+
+  The following diagram illustrates the idea that for a given task there could be: 
+  - 5% chance that it will be done in 1 week. This could be called the best case. 
+  - 50% chance that it will be done in 2 weeks. This is the median estimate. 
+  - 95% chance that it will be done in 6 weeks. This could be called worst case. 
+
+![graph](download2.png)
+### **Statistical fluctuations average out**<br/>
+One important observation about the uncertainty of task completion time is the simple fact of statistical fluctuations averaging out. <br/>The following diagram illustrates the idea that given two tasks each having a standard deviation of 4 days, when these tasks are <br/>done one after the other, the standard deviation (uncertainty) is not 8 days but rather 5.6 days.
+
+sigma(T1 + T2) = sqrt(sigma^2(T1) + sigma^2(T2)) = sqrt(8) ~ 5.6
+
+![graph1](download3.png)
+
+This is the fundamental insight that should make us realize that instead of adding buffers to each task we should rather aggregate<br/> all the buffers and add them to the end of the two tasks. 
+
+![graph2](download4.png)
+
+### **Appendix**<br/>
+
+The next diagram illustrates the idea that some tasks have a large variability (large uncertainty) and other tasks have a low variability (small uncertainty).<br/> In all cases it is valid to:
+
+![graph3](download5.png)
+<br/>
 
 ## Typical tasks for a project lead
+
+Development - During the Sprints in which we are developing new features, development tasks occupies majority of my time, I would say 75-85%. But even in the Sprints that are not focused on the development, I try to deliver new features. Sometimes those are new things in the admin panel, sometimes those are the features we didn't have time to implement sooner and sometimes it is the improvement of the existing features, so I would say it is around 40% of time in those Sprints also.
+
+Top tasks in the development category would be:
+  - Creating specifications for developers
+  - Breaking down features to tasks
+  - Prioritizing the tasks  
+  - Tracking the progress
+  - Verifying tasks. 
+  - Providing additional explanations to developers
+  - Communicating with stakeholders to better understand the required feature
+  - Creating test cases
+  - Creating mock data so we can test the feature
+  - Occasional back-end development work
+  - Mapping content keys to the design elements in Zeplin
+  - Publishing apps to Play Store and App Store 
+  - Regression testing
+  - Run through new test cases
+  - Release backends to production  
+  - Data modelling with developers
+  - API design discussions with developers
+  - Technical discussions about how to implement new features. 
+  - Clarifications with other people inside Salling Group, e.g. Gigya related or SAP related
+  - Coordination between part-time developers like Sonja and Alexandra 
+  - Preparing for the sprint meeting - making sure things are working
+  - Writing the sprint report
+  - Writing minutes of meetings after sprint meetings.
+  - Improve charts in Kibana
+  - Troubleshooting issues from Kibana logs
 
 ## More about the sprint meeting
 
