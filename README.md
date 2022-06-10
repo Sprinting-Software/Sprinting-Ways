@@ -517,10 +517,29 @@ c. Review Next Sprint: Go through the features planned for the next sprint and r
 
 ## More about the project workbook
 ### **Introduction**<br/>
-You can find the Project Workbook template here on Google Docs. 
+You can find the <a href="https://docs.google.com/document/d/1C2O1dA-arnVVqjNYr99HxdgXoJvPZKiYZdBBWxni-8Y/edit">Project Workbook template</a>  here on Google Docs. 
 
 Something to notice: 
+The template is self-explanatory but here are a couple of additional advices: 
+- Often you evolve from project mode to product mode (cf [Product vs project - modes of working](#project-management-concepts)).<br/> In product mode things usually are handled differently. The workbook is to be used when running a well-defined<br/> project but later when you go into “continuous project” mode it doesn’t necessarily apply. At this point you should<br/> have adopted to a mode of working agreed with the surrounding stakeholders. 
 
+### **How to fill out the project workbook**<br/>
+
+The template is self-explanatory but here are a couple of additional advices: 
+- Describe the success criteria and make sure they represent a reasonable description of the ultimate aim of the project<br/> seen from the project sponsor
+- Break down the scope in sprint goals. A sprint goal can be either a feature, a milestone or something else. 
+- Decide on team size and roles
+- Given the team, create a sprint plan showing which sprint goals will be delivered in which sprint.<br/> For this we use median estimates. Add a project buffer corresponding to 50% of the  estimated sprints. See<br/> [Project management concepts](#project-management-concepts) and 
+- Often you evolve from project mode to product mode
+- Often you evolve from project mode to product mode
+- Often you evolve from project mode to product mode
+- Often you evolve from project mode to product mode
+- Often you evolve from project mode to product mode
+- Often you evolve from project mode to product mode
+- Often you evolve from project mode to product mode
+- Often you evolve from project mode to product mode
+- Often you evolve from project mode to product mode
+- Often you evolve from project mode to product mode
 ## The quality assurance approach
 
 ## Manual test cases
