@@ -190,6 +190,8 @@ Next let us define them one by one.
 | Decision log| A decision log contains decisions and the process around them. The normal process is<br/> that a question comes up during the implementation process and when it has been<br/> answered, it becomes a decision. In the meantime, it is often necessary to turn it into<br/> an assumption so that development activities can be planned around it while<br/> stakeholders takes the decision. The decision log is driven by the need for<br/> stable grounds for the implementation of the project or to minimize the risk of future<br/> disputes. The Decision Log should not manage scope decisions unless they are<br/> significantly impacting the architecture of the solution. <br/><br/>A decision should use an imperative language such as “We will…” or “We should…”. |
 |Risk log| The Risk Log gives an overview of the risks managed by the project. Risks are<br/> unknowns that can impact the feasibility of the project (scope, due date or cost).<br/><br/> PS: Security risks are a special kind of risks associated with running software. Such risks is not a part of the project risk log but should rather be part of a company-wide security exception log.
 <br/>
+<br/>
+
 # Project management practices
 
 ## Introduction to the lead role and the sprint cycle
@@ -526,20 +528,19 @@ The template is self-explanatory but here are a couple of additional advices:
 ### **How to fill out the project workbook**<br/>
 
 The template is self-explanatory but here are a couple of additional advices: 
-- Describe the success criteria and make sure they represent a reasonable description of the ultimate aim of the project<br/> seen from the project sponsor
-- Break down the scope in sprint goals. A sprint goal can be either a feature, a milestone or something else. 
+- Describe the **success criteria** and make sure they represent a reasonable description of the ultimate aim of the project<br/> seen from the **project sponsor**
+- Break down the scope in **sprint goals.** A sprint goal can be either a feature, a milestone or something else. 
 - Decide on team size and roles
-- Given the team, create a sprint plan showing which sprint goals will be delivered in which sprint.<br/> For this we use median estimates. Add a project buffer corresponding to 50% of the  estimated sprints. See<br/> [Project management concepts](#project-management-concepts) and 
-- Often you evolve from project mode to product mode
-- Often you evolve from project mode to product mode
-- Often you evolve from project mode to product mode
-- Often you evolve from project mode to product mode
-- Often you evolve from project mode to product mode
-- Often you evolve from project mode to product mode
-- Often you evolve from project mode to product mode
-- Often you evolve from project mode to product mode
-- Often you evolve from project mode to product mode
-- Often you evolve from project mode to product mode
+- Given the team, create a **sprint plan** showing which sprint goals will be delivered in which sprint.<br/> For this we use **median estimates.** Add a project buffer corresponding to 50% of the  estimated sprints. See<br/> [Project management concepts](#project-management-concepts) and [✅Estimates](#estimates)
+- For each feature-oriented sprint goal, create a dedicated section in the “functional view” to spell out the intended<br/> feature design.
+- List down all **milestones** mentioned in the sprint plan and describe accept criteria.
+- List down all **dependencies** and describe accept criteria and the responsible party and link to them in the sprint plan. 
+- List down all **assumptions** in the **Preliminary assumptions** section
+- List down all **limitations** in the **Limitation log**
+- List down all project risks in the **risk log**
+- Extract all **non-functional requirements**
+- Create a couple of solution architecture diagrams showing the bigger picture of the solution
+
 ## The quality assurance approach
 
 ## Manual test cases
