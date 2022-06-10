@@ -416,8 +416,110 @@ Top tasks in Maintenance and support would be:
   <br/>
 
 ## More about the sprint meeting
+### **Introduction**<br/>
+The sprint meeting - also called the "sprint demo" - is the demarcation point between two sprints. It must answer two questions: 
+  - Present the results of the sprint just completed. 
+  - Agree on the scope for the coming sprints using a so-called funnel sight. 
+  - Agree on priorities for the next coming sprints
+
+  The sprint meeting should be planned regularly and it has a high priority to not move the meeting as it determines the end<br/> of a sprint and start of the next. 
+  <br/>
+
+### **The sprint meeting at a glimpse**<br/>
+The idea of the sprint meeting is illustrated here:
+![diagram2](download6.png)
+Notice the following: 
+  - The sprint report describes the output of the most recent sprint. Don’t spend time on describing anything about the future in the sprint report.<br/> Remember that we measure progress by showing running software. Not by speculating about the future. This may seem obvious but in fact it is not.<br/> On many projects the status of a project relies on metrics such as burndown charts, forecast of ETA of ongoing tasks etc.<br/> In Sprinting we try to stay very fact-based by reporting status only on which features are really DONE and we prove it by showing it.  
+  - During the “scope grooming” part of the meeting we ensure that the scope of the next sprint is 100% aligned.<br/> For the second next sprint the target is 80% scope alignment and for the next next sprint the target is 10%. <br/>All the future sprints should have 5% scope alignment.<br/>
+(*) By **scope alignment** we mean that the scope is described, understood and agreed upon. 
+  - During the planning part of the meeting we validate the scope of the coming sprints. The question we ask is that given all that we have learned up to<br/> now, do we still believe the scope is appropriate for the sprint?
+  <br/>
+
+  ### **Terminology**<br/>
+  **Project Workbook:** Living document reflecting the current state of the project. It includes the scope of the project (similar to a Statement of Work),<br/> a detailed description of the features, the sprint plan, a list of dependencies, a decision log, risk assessments, and technical details.
+
+**Pre-analysis:** Fixed "Statement of Work" created before project kick-off. It includes scope,  estimates, and description of features and technical details for<br/> the project.
+
+**Leftovers:** Tasks to do development that was not completed in the sprint
+
+**Back-log:** We tend to avoid the backlog term as it is not accurate enough. Instead we have Left-overs (things we missed for past sprints) and<br/> Feature-sections for future sprints.
+<br/>
+
+### **The Process**<br/>
+
+**Before the Sprint meeting**
+
+All Done tasks must be verified and moved to "Pending for sprint report" list in Trello
+
+The day before the sprint meeting, the Project Lead creates the Sprint Report in Confluence and sends a link or a PDF export to the<br/> Product Owner and other relevant stakeholders.<br/> 
+The Sprint Report must contain detailed descriptions of all that have been implemented during the sprint as well as potential<br/> leftovers or open issues.
+
+**During the Sprint Meeting**
+
+The Project Lead is responsible for running the meeting and for writing notes. It is a good idea to write the<br/> meeting notes on the fly in a shared google doc or Confluence page so that all meeting participants can edit the<br/> notes simultaneously. Another good idea is to use the same Google Document or Confluence page for all meetings<br/> (say "Customer Project Minutes of Meetings") to avoid the need to create new documents all the time. 
+
+**After the Sprint Meeting**
+
+After the meeting, the Project Lead reviews the notes and write the meeting minutes, which he/she then sends over<br/>  e-mail to the meeting participants and relevant stakeholders.
+
+The tasks must be re-prioritized together with the Project Owner on the Client's side so that the TODO list contains<br/>  tasks planned to be done in the new sprint.
+<br/> 
+
+### **Agenda**<br/>
+
+It is recommended to follow this agenda:
+1. **Scoping (UX presentation)**
+
+The UX lead goes through the new screens and changed designs and this is compared with the feature sections in the workbook.
+
+2. **Sprint Demo**
+
+Live demo of new features build during the sprint combined with walk-through of the sprint report. Remember these guidelines: 
+
+         a. Show on all relevant platforms (iOS/Android/Web). 
+         b. Ask carefully if the client considers the features done for production. As if not even a comma 
+          was to be changed. Take note of any detail not considered 100% done (these are called left-overs). 
+         c. Try only to demonstrate things that were completed during the sprint. If you know that some feature 
+         is really half-done, it is often better not to demonstrate it for these reasons: 
+            i. You will have to take notes of many left-overs
+            ii.You will have to demonstrate it again later when it is completed and the client will feel less 
+               engaged as the feature is no longer freshly demonstrated. If feels as if we are seeing the same 
+               things over and over. 
+            iii. If you don't demonstrate it now, you will have accrued  some "progress" that can fuel the next demo.
+                 In other words: doing the opposite of gold-plating.
+
+3. **Planning**
+
+a. Prioritize Leftovers: Create all leftovers and new changes as tasks and prioritize as:
+
+      i. P0: Must be handled as soon as possible in next sprint
+
+     ii. P1: Should be handled in the next-coming buffer sprint
+
+    iii. P2: Can be handled after the current phase. 
+
+b. Update Sprint Plan in the Project Workbook
+
+      i. re-color current sprint as grey.
+
+     ii. Mark down any known dependencies or blockers with a proper estimation of their severity and clear steps to
+         mitigating these. Please do not forget to include also the people responsible for the step/s to be done.
+
+    iii. Update the decision log, if any decision came up during the meeting.
+
+     iv. Verify that planned features are done or move to a future sprint.
+
+      v. Update feature sections to reflect possible changes to the developed features. If parts of features are
+         postponed to later, then mark this in the feature description
+
+c. Review Next Sprint: Go through the features planned for the next sprint and review and update details. Re-consider the likelihood that the<br/> sprint goals can be achieved and express to the client either certainty or uncertainty to set reasonable expectations given the time, scope and<br/> resources for the sprint. 
+
 
 ## More about the project workbook
+### **Introduction**<br/>
+You can find the Project Workbook template here on Google Docs. 
+
+Something to notice: 
 
 ## The quality assurance approach
 
