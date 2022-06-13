@@ -563,6 +563,7 @@ As we are trying to reach 0 errors the cost of effort grows indefinitely. Conclu
 - We need to apply more sophisticated techniques than growing a regression test suite endlessly - the next<br/> section describes the techniques.
 <br/>
 <br/>
+
 ![costgraph](costgraph.png)
 
 ### **How to reach “no errors””**<br/>
@@ -587,10 +588,68 @@ Quality of releases comes from a combination of multiple things:
 |Regression test | Manual tests performed when releasing new versions of software. The regression test can be a subset<br/> of the Functional test-cases or it can be standalone test defined in a different way.|
 |Log monitoring of the release cut-over| Manual inspection of logs from various sources like Kibana or server logs (CPU, memory, db<br/> connections etc.) with a focus on detecting “patterns of change” starting from the point in time when the<br/> new release was launched.To make this inspection even more efficient, we should be able to filter logs on<br/> version number so that we can see which version causes errors.|
 |Canary releases|Similar idea to Green-Blue deployments but here only certain users will get to the new release.<br/> For instance, all Salling Group employee and Sprinting employee could run against the canary release and<br/> only when we have properly verified that the release is healthy, we will push other users to the new release.|
-|Backend unittests| Smaller self-contained tests running on backend-components. These tests cannot depend on out side things. |
+|Backend unittests| Smaller self-contained tests running on backend-components. These tests cannot depend on out side things.|
 |Incident process| We must have a thorough incident process to make sure we learn and improve from each incident.|
 
+**Ensuring quality of operations**
 
+Ensuring quality of operations is about how to have “no errors” during daily operations irrespectively of new releases. 
+
+The techniques applied here involves the following. 
+
+|   **Discipline**  |  **Description**  |
+| -------------------- | ------------------- |
+| Heartbeat monitoring of “our” services| Continuously calling both our own endpoints. The purpose is to have a crystal clear indication<br/> of when certain services started to break. If a new release breaks one of the endpoints, then we<br/> will immediately know from the heartbeat monitoring.  |
+|Daily log monitoring| Daily manual inspection of logs from various sources like Kibana or server logs (CPU, memory,<br/> db connections etc.). The inspection should focus on detecting “patterns of change” in error codes,<br/> response times etc. It is a continuous effort to be able to assess that the platform is healthy and<br/> often it is based on many heuristical considerations|
+|Alarms| Automatic notification of personel as soon as some issue is detected from heartbeats or logs.|
+<br/>
+
+### **Further explanation of QA disciplines””**<br/>
+
+**Backend integration tests**
+
+Integration tests can be done in many clever ways some of which are illustrated on this diagram.
+
+![BEtests](BEtests.png)
+
+**Heartbeat monitoring of “our” services**
+
+-  Call each of our own endpoints once every 10 seconds
+-  Check the status code is OK
+-  Optionally compare output if a fixed output is expected
+-  Make heartbeat results available on a dashboard in AWS, Grafana or Kibana. 
+
+**Heartbeat monitoring of “our” services**
+
+The release version can be encoded in the log-traffic which means we can monitor the old version versus the<br/> new version and look for patterns of bad behavior. 
+
+Error heatmap from previous version:
+
+![Hmap](download7.png) 
+
+Error heatmap from new version: 
+
+![Hmap](download8.png)
+
+**Green-Blue deployment of backends**
+
+The idea is to deploy to production in two parallel tracks called “Blue track” and “Green track” and be in exact control of: 
+-  how many users will be in the blue track and how many will be in the green track
+-  loadbalancer update
+
+![LoadB](download9.png)
+
+**Canary releases**
+
+The idea of canary releases is illustrated here. 
+
+![CanaryR](download10.png)
+
+**The incident process**
+
+We must have a thorough incident process to make sure we learn and improve from each incident.<br/> This is illustrated on the next diagram. 
+
+![IncidentP](download11.png)
 <br/>
 <br/>
 
