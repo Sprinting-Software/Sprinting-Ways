@@ -736,9 +736,129 @@ As a lead you can grow your own habits around the process and you can find your 
 
 # About documentation
 
+Documentation is not a primary outcome of agile software projects. In fact, one of the key agile principles is to<br/> “value working software over comprehensive documentation”.Nevertheless documentation is still a key ingredient in how we<br/> build software. 
+
+The following pages describes the approach to documentation in Sprinting:
+- **Why documentation is important**
+- **Documentation principles**
+- **The recommended documentation structure**
+- **Standard documents**
+
 ## Why documentation is important
 
+Let us first agree on the following fact of life: Building software is a complex undertaking relying on a substantial amount<br/> of auxiliary activities which on the individual level includes thinking, reading and learning and on the organizational level<br/> includes documenting, meeting and communicating. This is illustrated here: 
+
+![Illustration1](download12.png)
+
+
+The effectiveness of all the auxiliary activities can be boosted if we have the right documentation habits because effective<br/> documentation can be read to support thinking, speed up learning, skip meeting and replace talking and listening to some extend. 
+
+Understanding and describing what documentation to produce is challenging. We need to answer the following questions about a<br/> given piece of documentation: 
+
+- Why produce it?
+- When should we produce it?
+- Who should produce it?
+- Who is the audience?
+- What should be the format of documentation?
+- In which context does it fit? (Folder structure)
+- To what level of detail should we document?
+
+
 ## Documentation principles
+
+### **About this document**<br/>
+
+The purpose of this document is to describe how we work with documentation in Sprinting projects. <br/>
+The purpose is to organise the information in ways that supports our ways of working. 
+
+### **Documentation structure and ways of working**<br/>
+The documentation structure will in many ways reflect our ways of working - and vice versa. In classic waterfall projects you will have<br/> a number of phases and for each phase you will have a number of deliverables. This process - though not very effective for our field<br/> of industry - is simple to describe and the documentation structure easy to infer. On some hypothetical project it might look like this: 
+
+- Analysis
+   - High-level Requirements.docx
+   - Success criteria.docx
+- Design
+   - Logical Data model.docx
+   - User stories.docx
+- Detailed design: 
+   - Accept criteria.docx
+   - Physical Data model.docx
+
+In our company things become more complicated for the following reasons: 
+- We need tailor-suited ways of working fitting to each project. We can’t use a one-size-fits-all approach. In spirit of the agile<br/> principles of valuing “working software over extensive documentation” we want to produce as little documentation as possible<br/> while still reaching our short-term and long-term goals. Hence each agile project should only produce documentation that<br/> makes sense to the project. 
+- As the documentation is never a goal in itself, any document started has a risk of not being completed. This is opposed to a<br/> waterfall project where documents are a first-class delivery of the project method and hence proper time and management<br/> attention is allocated for it. 
+- We work across many different customers and each customer will often have its own project management method which we<br/> will have to fit it. 
+
+For this reason the documentation structure used in Sprinting is more like a set of elements you can choose from as a lead.<br/> Depending on the context of your work you can choose bigger or smaller parts of the documentation structure presented next. 
+
+### **Introduction to documentation structures**<br/>
+
+
+The documentation structure is a tree structure where **sections** contains other sections or documents and a document has no<br/> child-elements. Sometimes we may use the word **folder** as a synonym for the word section.
+
+A document may naturally have **paragraphs** which creates a logical information structure within the document. 
+
+![Illustration2](download13.png)
+
+Here is an example of a documentation structure from a Mac computer showing two sections (“design” and “technical design”)<br/> and two documents. 
+
+![picture1](root_pic.png)
+
+Here is an example of a documentation structure from Confluence showing two sections (“Documentation principles” and<br/> “Documentation templates”) and three pages inside them. 
+
+![picture2](doc_princp.png)
+
+### **Document state and type**<br/>
+
+For any document we can consider the *state* and the *type.* These are defined next. 
+- The **state** of a document is any of the following:
+   - **WIP**: work-in-progress - a document that is still actively being written and henceforth it cannot yet be<br/> considered fully valid or complete. 
+   - **UPDATED**: an **updated** document is a document that is correct on its topic. An updated document should<br/>  not contain invalid or misleading information. 
+   - **STALE**: a **stale** document is a document that has grown old and dusty and not properly updated.<br/>  It may still have value for some readers. A STALE document is still subject to possible future updates which<br/>  may change the state to UPDATED. Sometimes we may say that a document is **obsolete** as an extreme<br/>  degree of being stale. However, obsolete is a more subjective judgement meaning that for certain kinds of<br/>  readers this document is no longer worth reading. 
+- The document will go through these states in the **life-cycle** of the document as depicted below.<br/>  We have indicated the states with the checkbox-icon and the warning icon. 
+
+![picture3](doc_cycle.png)
+
+- We will distinguish between these **types** of documents or section of documents: 
+   - **Governed document**: A governed document is a document with a strict process around it concerning<br/> approval or rejection of the document. Governed documents are used to create strong gates such as<br/> security approval, architecture approval etc. Good examples of governed documents are: 
+      - Architecture Blueprint
+      - Architectural Decision Records. 
+   - **Journal**: A **journal** is a special kind of documentation used like an append-only log.<br/> You can think of a journal like a diary or a log book. JOURNAL documents are created at a very specific<br/> point in time and it should never be updated later. Journal documents by definition become stale over time,<br/> yet has a value as long as the reader understands the context of the document.<br/> Good examples of a JOURNAL are: 
+      - A sprint report 
+      - Minutes of meetings documents    
+      - Decision records
+   - **Always updated**: A document is said to be **always updated** if it is intended to be kept up to date at any point in time.<br/> Good examples of such documents are: 
+      - A sprint plan  
+      - An org chart 
+   - **Mixed state**: A document is said to be in a **mixed state** if it is allowed to be either updated, WIP or stale.<br/> Good examples of such documents are: 
+      - Development handbook articles
+      - Various how-to articles
+
+We will use the following LEGEND in the diagrams to come. 
+
+![diagram3](legend1.png)
+
+### **Documents and templates**<br/>
+Certain documents may have a specific **template** which is a predefined set of paragraphs that are either mandatory or <br/>optional for that template. 
+
+### **Classification of folders and documents**<br/>
+
+|   **Name of document/folder**  |  **Project or System?** |   **Purpose**  |  **Name convention** (*examples*) | **Actors and contributions**  | **Content**  |
+| -------------------- | ------------------- | -------------------- | ------------------- | -------------------- | ------------------- |
+| Project Workbook| Project  | A live document<br/> A description of how a certain project is executed. | {name} workbook| Author: Project lead|<ul><li>Project plan /sprint plan</li><ul><li>Timeline</li><li>Goals / milestones</li><li>Dependencies</li></ul></ul><ul><li>Risks</li><li>Staffing</li><li>Assumptions</li><li>Limitations</li><li>Stakeholders</li><li>Reporting conventions</li><li>...</li></ul>
+|Analysis and Design| System| A description of how a certain area of a software system should work.<br/>The functional specifications should ideally be done pr. system area but it may depend on the nature of the project.| AD{id} - {name}<br/>AD33 - Punch cards|Author: Product owner, business analyst, project lead, client<br/> Reader: product owner, project lead or partially developers| <ul><li>Requirements</li><li>UX/mockups</li><li>Stories</li><li>Use cases</li><li>Success criteria</li></ul>|
+|Test Case| System| A description of how to test and verify a certain feature or aspect of a platform.<br/> The test cases should be done pr. system area (just like the other kind of documents).| TC{id} - {name} <br/>TC33 - Punch cards | <ul><li>Author: Project lead or QAs</li><li>Reader: Project lead or QAs</li></ul>| <ul><li>Instructions on how to verify different functional aspects of the system. </li></ul>|
+|Technical Specification| System| A description of how a certain area of a software system is implemented.<br/> The technical specifications are done pr. system area (just like the functional specifications). The technical specifications are long-term documents that should be maintained and extended as the system evolves. The technical specifications should be the first place to read for new developers diving into a certain area of the system. | SPEC{id} - {name}<br/> SPEC33 - Punch cards| Author: Project lead or developers or an architect<br/> Reader: developers |<ul><li>Overall description of the system area from a developers point of view</li><li>Data model / domain model</li><li>API design</li></ul> Optionaly:<ul><li>Architecture diagrams: </li><ul><li>Collaboration/activity diagram</li><li>Deployment diagram</li><li>Sequence diagram</li></ul></ul>| 
+|Task descriptions| Azure DevOps<br/> (ticket systems)| Tasks are supposed to be mostly used during the development of a task and not for long term documentation. | | |<ul><li>Just enough information to allow the developer to build it.</li><li>Reference technical specifications where needed.</li></ul>|
+|Source code documentation| | | | |<ul><li>Readme files</li></ul>|
+|API documentation| | | | |<ul><li>Swagger documentation</li></ul>|
+
+### **Revolving naming conflicts**<br/>
+
+When the above structure is implemented in Confluence, we will have a conflict with the constraint that two pages or sections<br/> cannot have the same name in the same Confluence space. To resolve this conflict we will follow this convention: 
+
+Each system gets an official abbreviation such as BIF for BifrostBackend. <br/>Then instead of Solution Blueprint we can write BIF Solution Blueprint
+
 
 ## The recommended documentation structure
 
