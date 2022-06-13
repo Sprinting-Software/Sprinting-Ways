@@ -188,7 +188,7 @@ Next let us define them one by one.
 | -------------------- | ------------------- |
 | Dependency log|A dependency log is a list of external deliverables (i.e. something to be done that is<br/> outside the control of the sprint team). Each dependency is described by a title and<br/> a responsible person/team. In addition it may have a description and/or a list of<br/> accept criteria depending on the nature of the project. |
 | Decision log| A decision log contains decisions and the process around them. The normal process is<br/> that a question comes up during the implementation process and when it has been<br/> answered, it becomes a decision. In the meantime, it is often necessary to turn it into<br/> an assumption so that development activities can be planned around it while<br/> stakeholders takes the decision. The decision log is driven by the need for<br/> stable grounds for the implementation of the project or to minimize the risk of future<br/> disputes. The Decision Log should not manage scope decisions unless they are<br/> significantly impacting the architecture of the solution. <br/><br/>A decision should use an imperative language such as “We will…” or “We should…”. |
-|Risk log| The Risk Log gives an overview of the risks managed by the project. Risks are<br/> unknowns that can impact the feasibility of the project (scope, due date or cost).<br/><br/> PS: Security risks are a special kind of risks associated with running software. Such risks is not a part of the project risk log but should rather be part of a company-wide security exception log.
+|Risk log| The Risk Log gives an overview of the risks managed by the project. Risks are<br/> unknowns that can impact the feasibility of the project (scope, due date or cost).<br/><br/> PS: Security risks are a special kind of risks associated with running software. Such risks is not a part of the project risk log but should rather be part of a company-wide security exception log.|
 <br/>
 <br/>
 
@@ -540,8 +540,56 @@ The template is self-explanatory but here are a couple of additional advices:
 - List down all project risks in the **risk log**
 - Extract all **non-functional requirements**
 - Create a couple of solution architecture diagrams showing the bigger picture of the solution
-
+<br/>
+<br/>
 ## The quality assurance approach
+### **Introduction**<br/>
+We need a quality assurance approach that will bring us as close as possible to zero errors in deliveries and operations. 
+
+### **Types of tests**<br/>
+- Automated API tests
+- Automated UI tests
+- Manual tests - the full test suite
+- Regression tests - a subset of the manual test suite
+
+### **We should strive for “no errors”**<br/>
+
+Our attitude is that we should strive for “no errors” in releases and operations. This is in theory impossible,<br/> but the attitude makes us constantly move toward perfection.
+
+### **Reaching 0 errors  is asymptotic in cost”**<br/>
+
+As we are trying to reach 0 errors the cost of effort grows indefinitely. Conclusions: 
+- Sometimes errors will happen
+- We need to apply more sophisticated techniques than growing a regression test suite endlessly - the next<br/> section describes the techniques.
+<br/>
+<br/>
+![costgraph](costgraph.png)
+
+### **How to reach “no errors””**<br/>
+**Kaizen**
+
+The most fundamental principle in reaching “no errors” is the simple idea of constant learning from errors and<br/> implementing mitigations to prevent the same error from happening again. 
+
+We should distinguish between ensuring quality in releases and quality of daily operations.
+
+NB: Kaizen is Japanese for continuous improvements. 
+
+**Ensuring quality of releases**
+
+Quality of releases comes from a combination of multiple things:
+|   **Discipline**  |  **Description**  |
+| -------------------- | ------------------- |
+| Smoke test|A manual test that is intentionally very short, yet testing top 3 use cases of the system.<br/> The smoke test is normally performed in production right after releasing, and it protects<br/> against total failures. |
+| Heartbeat monitoring of “our” services| Continuously calling both our own endpoints. The purpose is to have a crystal clear indication<br/> of when certain services started to break. If a new release breaks one of the endpoints, then we<br/> will immediately know from the heartbeat monitoring.  |
+|Green-Blue deployment of backends| Deploying new versions of the software in a parallel deployment track, monitor errors in the new track<br/> and fall back if errors are detected|
+|Backend integration tests| Larger tests of API-calls testing for errors or known output. Integration tests can be hand-coded or<br/> based on record-replay-compare techniques.|
+|Functional test cases| Manual tests covering all functionalities of the system. Manual test cases are also important in order<br/> for new people to learn about the inner workings of the product.|
+|Regression test | Manual tests performed when releasing new versions of software. The regression test can be a subset<br/> of the Functional test-cases or it can be standalone test defined in a different way.|
+|Log monitoring of the release cut-over| Manual inspection of logs from various sources like Kibana or server logs (CPU, memory, db<br/> connections etc.) with a focus on detecting “patterns of change” starting from the point in time when the<br/> new release was launched.To make this inspection even more efficient, we should be able to filter logs on<br/> version number so that we can see which version causes errors.|
+|Canary releases|Similar idea to Green-Blue deployments but here only certain users will get to the new release.<br/> For instance, all Salling Group employee and Sprinting employee could run against the canary release and<br/> only when we have properly verified that the release is healthy, we will push other users to the new release.|
+|Backend unittests| Smaller self-contained tests running on backend-components. These tests cannot depend on out side things. |
+|Incident process| We must have a thorough incident process to make sure we learn and improve from each incident.|
+
 
 <br/>
 <br/>
