@@ -366,6 +366,7 @@ The next diagram illustrates the idea that some tasks have a large variability (
 ![graph3](download5.png)
 <br/>
 <br/>
+
 ## Typical tasks for a project lead
 
 Development - During the Sprints in which we are developing new features, development tasks occupies majority of my time, <br/>I would say 75-85%. But even in the Sprints that are not focused on the development, I try to deliver new features.<br/> Sometimes those are new things in the admin panel, sometimes those are the features we didn't<br/> have time to implement sooner and sometimes it is the improvement of the existing features, so I would say it is around 40%<br/> of time in those Sprints also.
@@ -515,7 +516,8 @@ b. Update Sprint Plan in the Project Workbook
          postponed to later, then mark this in the feature description
 
 c. Review Next Sprint: Go through the features planned for the next sprint and review and update details. Re-consider the likelihood that the<br/> sprint goals can be achieved and express to the client either certainty or uncertainty to set reasonable expectations given the time, scope and<br/> resources for the sprint. 
-
+<br/>
+<br/>
 
 ## More about the project workbook
 ### **Introduction**<br/>
@@ -542,6 +544,7 @@ The template is self-explanatory but here are a couple of additional advices:
 - Create a couple of solution architecture diagrams showing the bigger picture of the solution
 <br/>
 <br/>
+
 ## The quality assurance approach
 ### **Introduction**<br/>
 We need a quality assurance approach that will bring us as close as possible to zero errors in deliveries and operations. 
@@ -743,6 +746,8 @@ The following pages describes the approach to documentation in Sprinting:
 - **Documentation principles**
 - **The recommended documentation structure**
 - **Standard documents**
+<br/>
+<br/>
 
 ## Why documentation is important
 
@@ -762,7 +767,8 @@ Understanding and describing what documentation to produce is challenging. We ne
 - What should be the format of documentation?
 - In which context does it fit? (Folder structure)
 - To what level of detail should we document?
-
+<br/>
+<br/>
 
 ## Documentation principles
 
@@ -858,11 +864,46 @@ Certain documents may have a specific **template** which is a predefined set of 
 When the above structure is implemented in Confluence, we will have a conflict with the constraint that two pages or sections<br/> cannot have the same name in the same Confluence space. To resolve this conflict we will follow this convention: 
 
 Each system gets an official abbreviation such as BIF for BifrostBackend. <br/>Then instead of Solution Blueprint we can write BIF Solution Blueprint
-
+<br/>
+<br/>
 
 ## The recommended documentation structure
 
+### **Introduction**<br/>
+This page describes the recommended structure for both project-level and system-level documentation. A system is another<br/> word for application or product, hence, the system-level structure also applies when you build a product. 
+
+To understand in more depth what goes into which document, see [Standard documents](#standard-documents)
+
+### **Project-level documentation**<br/>
+
+The following shows the recommended folder structure for projects. 
+
+![structure1](folder_structure.png)
+
+### **Project-level documentation**<br/>
+
+For cross-going technical system documentation we recommend the following structure. 
+
+![structure2](folder_structure2.png)
+
+### **Project-level documentation**<br/>
+
+For each system (or application or service depending on what it is called in your business context) we recommend the<br/> following structure. 
+
+![structure3](folder_structure3.png)
+<br/>
+<br/>
+
 ## Standard documents
+
+|   **Name of section / document**  |   **Purpose**  |  **Name convention** <br/>*examples* | **Roles**<br/>*suggestions/it depends*  | **Typical content or link to template**  |
+| -------------------- | ------------------- | -------------------- | ------------------- | -------------------- | 
+| Project Workbook| Contains all elements needed to manage a project such as sprint plan, decision log, risk log and dependency log.  | {project-name} workbook| Author: Project lead <br/> Reader: Stakeholders|  [More about the project workbook](#standard-documents)|
+|Functional Specification|  A description of how a certain area of a software system should work.<br/>The functional specifications should ideally be done pr. system area but it may depend on the nature of the project.| FS{id} - {name}<br/>FS33 - Punch cards|Author: Product owner, business analyst, project lead, client<br/> Reader: project lead or partially developers| <ul><li>Requirements</li><li>UX/mockups</li><li>Stories</li><li>Use cases</li><li>Success criteria</li></ul>|
+|Technical Specification|  A description of how a certain area of a software system is implemented.<br/> The technical specifications are done pr. system area (just like the functional specifications). The technical specifications are long-term documents that should be maintained and extended as the system evolves. The technical specifications should be the first place to read for new developers diving into a certain area of the system. | TC{id} - {name} <br/>TC33 - Punch cards| Author: Project lead or developers |<ul><li>Overall description of the system area from a developers point of view</li><li>Data model / domain model</li><li>API design</li></ul> Optionaly:<ul><li>Architecture diagrams: </li><ul><li>Collaboration/activity diagram</li><li>Deployment diagram</li><li>Sequence diagram</li></ul></ul>| 
+|Test Case|  A description of how to test and verify a certain feature or aspect of a platform.<br/> The test cases should be done pr. system area (just like the other kind of documents).| TC{id} - {name} <br/>TC33 - Punch cards | | |
+
+
 
 
 Our ways of working in one convenient, evolving place.
