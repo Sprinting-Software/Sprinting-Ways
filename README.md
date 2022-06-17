@@ -5,6 +5,8 @@ Welcome to this introduction to ways of working in Sprinting Software.
 > A leader is one who knows the way, goes the way, and shows the way.
 > John C. Maxwell
 
+This material is maintained on [Github here](https://github.com/Sprinting-Software/Sprinting-Ways) and [published as a website here](https://sprinting-software.github.io/Sprinting-Ways/)
+
 # Project Management concepts
 
 ## Product vs project - modes of working
