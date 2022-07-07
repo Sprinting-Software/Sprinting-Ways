@@ -13,11 +13,11 @@ This material is maintained on [Github here](https://github.com/Sprinting-Softwa
 
 We have two modes of working:
 
-Product mode/kanban mode: we work on a best effort-basis without critical long-term due dates. The success criteria is to maximize the output of working software given the available capacity. We may still have long-term critical goals but we have flexibility in how the goals are achieved. For instance we may adjust scope to meet the deadline.
+**Product mode - also called kanban mode**: we work on a best effort-basis without time-critical long-term due dates. The success criteria is to maximize the output of working software given the available development capacity. We may still have long-term critical goals but we have flexibility in how the goals are achieved. For instance we may adjust scope to meet the due date.
 
-Project mode: we work against a critical long-term due date. The success criteria is to have the project scope delivered in its whole. Missing part of the scope or missing the due date severely limits or even negates the delivered business value.
+**Project mode**: we work against a critical long-term due date. The success criteria is to have the project scope delivered in its whole. Missing part of the scope or missing the due date severely limits or even negates the delivered business value.
 
-It is important to understand that there is a whole spectrum between these two ways of working and most teams will have periods of product mode and other periods of project mode. In addition, project mode often comes in a variant where the due date is fixed whereas the scope or the cost may be negotiable.
+It is important to understand that there is a whole spectrum between these two ways of working and most teams will have periods of product mode and other periods of project mode. In addition, project mode often comes in a variant where the due date is fixed whereas the exact scope or the cost may be negotiable.
 
 We strive toward Product-mode of working for multiple reasons, including:
 
@@ -37,17 +37,17 @@ Products and Projects have the following differences:
 | Continual improvements          | One-off delivery               |
 | Evolving customer needs         | Fixed requirements             |
 
+|
+
 ## Project management principles
 
-About this document
-
-This document describes the core project management principles and practices. The primary target audience is project leads (agile project managers) but developers and stakeholders may find it valuable as well.
+This section describes the project management principles and practices. The primary target audience is project leads (agile project managers) but developers and stakeholders may find it valuable as well.
 
 This document is mostly relevant when we are dealing with project-mode of working, not product-mode, see the previous section to understand the difference.
 
 ## Motivation
 
-Project management is the discipline by which we ensure delivery of a project. A project in our context will be defined to be any undertaking carried out collaboratively by multiple individuals carefully planned to achieve a particular aim. A project will have a scope, a budget and a deadline. The individuals involved may be organized in a single team or multiple teams.
+Project management is the discipline by which we ensure delivery of a project. A project in our context will be defined to be any undertaking carried out collaboratively by multiple people carefully planned to achieve a particular aim. A project will have a scope, a budget and a deadline. The individuals involved may be organized in a single team or multiple teams.
 
 As reliability is a key objective for us, the project management discipline should be mastered by all project leads.
 
@@ -69,9 +69,9 @@ Our approach to project management is composed from the following principles:
 
 In a nutshell a project has two phases:
 
-- The Preparation phase - a short time-boxed activity which involves mostly a few people such as an architect and management.
+- **The Preparation phase** - a short time-boxed activity which involves mostly a few people such as an architect and management.
 
-- The Execution phase - an iterative process where a fully allocated team works in 2-week sprints. The execution phase consists of planned sprints and one or more buffer sprints.
+- **The Execution phase** - an iterative process where a fully allocated team works in 2-week sprints. The execution phase consists of planned sprints and one or more buffer sprints.
 
 In between the two phases, management must ensure what is called "full kit" before the project can be started. The following diagram illustrates it.
 
@@ -143,15 +143,45 @@ Each planned sprint consists of the following high-level activities:
 
 - During the sprint demo all left-overs from the implemented features will be listed. The left-overs should be estimated.
 
-- The penetration of the project buffer will be calculated as the sum of estimates from all left-overs across all completed sprints. From here the general project health will be inferred according to the formula:
-
-> Project health = % of project buffer being penetrated / % of non-buffers sprints being completed.
-
-## The execution phase - buffer sprints
+## The execution phase - buffer sprints and project health
 
 In order to protect the due date and minimize the risk in the project, we add a number of buffer sprints. The number of buffer sprints can vary between 25%-100% of the number of planned sprints. For instance, in a project with a lot of uncertainty we may have 6 planned sprints and 4 buffer sprints. In a less risky project we could have 6 planned sprints and 1 or 2 buffer sprint.
 
 Buffer sprints may still hold high-level sprint goals such as “GO-LIVE” or “Preprod env working”
+
+- The spending of the project buffer will be calculated as the sum of estimates from all left-overs across all completed sprints. From here the general project health will be calculated according to the formula:
+
+> Project health = %-of-project-buffer-spent divided-by %-of-ordinary-sprints-being-completed.
+
+A value below 1 means that we have extra buffer. A value at exactly 1 means we are right on track. A value above 1 means that we are getting behind as we are eating up the buffer time faster than expected.
+
+Consider the following example to better understand:
+
+- 12 ordinary sprints were originally planned + 3 buffer sprints
+
+- 6 of these sprints have been implemented meaning:
+
+> %-of-ordinary-sprints-being-completed = 6/12 = 0.5
+
+- the left-overs from the 6 sprints are estimated to 2 sprints meaning:
+
+> %-of-project-buffer-spent = 2/3 = 0.66
+
+Hence:
+
+> Project health = 0.66 / 0.5 ~= 1.3
+
+Hence, we are getting behind.
+
+If this number is calculated throughout the project, and you plot it over time, then you will get this kind of fever-chart where the colors mean:
+
+- red: we are getting behind
+
+- yellow: we are on track
+
+- green: we are ahead
+
+![](images/fever_chart.jpg)
 
 ## Working against soft and hard due dates
 
@@ -161,11 +191,10 @@ When we work in product mode it is a different matter. Not all due dates are equ
 
 This page explains the differences.
 
-|                                                   | **Hard due date**                                                                                                                                                                                                                                                                                                                                                                                                                                                    | **Softdue dates**                                                                                                                                                                                                                                                                                                     |
-| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Principles                                        | - Hard due dates should be <br/> applied only when needed <br/> - We focus on the critical path of tasks <br/> - We carefully keep track of dependencies, <br/> risks and decisions, see <br/> [Project management principles](#project-management-principles)<br/>- We work with milestones and deadlines <br/>- We make sure to have safety buffers at<br/> the end of all our activities, see<br/>[Project management principles](#project-management-principles) | - We focus on maximizing the business<br/> value resulting from our efforts.<br/>- We consider the due date more like a<br/> desireable outcome but not a must-win battle.<br/> - The project sponsor must understand that the<br/> due date is not guaranteed as no overall project<br/> buffers have been built in. |
-| Sucess criteria                                   | - The due date is met. Depending on<br/> the context it may or may not be an<br/> advantage if the project is completed<br/> before the due date or not.                                                                                                                                                                                                                                                                                                             | - The customer gets maximum business<br/> value from the time available.                                                                                                                                                                                                                                              |
-| When do we<br/> have hard and<br/> soft due dates | - When we work with low-trust<br/> customers such as new customers <br/>- When critical business milestones<br/> must be met at a certain point in time.<br/>- When we have given a fixed price<br/> on a new project.                                                                                                                                                                                                                                               | - When we work with high-trust customers,<br/> such as customer that we already delivered well to. <br/>- When the business does not have critical<br/> milestones depending on our deliveries <br/>- When the customer perceives the work delivered<br/> as best-effort                                              |
+|                 | **Hard due date**                                                                                                                                                                                                                                                                                                                                                                                                                                                    | **Soft due dates**                                                                                                                                                                                                                                                                                                    |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Principles      | - Hard due dates should be <br/> applied only when needed <br/> - We focus on the critical path of tasks <br/> - We carefully keep track of dependencies, <br/> risks and decisions, see <br/> [Project management principles](#project-management-principles)<br/>- We work with milestones and deadlines <br/>- We make sure to have safety buffers at<br/> the end of all our activities, see<br/>[Project management principles](#project-management-principles) | - We focus on maximizing the business<br/> value resulting from our efforts.<br/>- We consider the due date more like a<br/> desireable outcome but not a must-win battle.<br/> - The project sponsor must understand that the<br/> due date is not guaranteed as no overall project<br/> buffers have been built in. |
+| Sucess criteria | - The due date is met. Depending on<br/> the context it may or may not be an<br/> advantage if the project is completed<br/> before the due date or not.                                                                                                                                                                                                                                                                                                             | - The customer gets maximum business<br/> value from the time available.                                                                                                                                                                                                                                              | When do we<br/> have hard and<br/> soft due dates | - When we work with low-trust<br/> customers such as new customers <br/>- When critical business milestones<br/> must be met at a certain point in time.<br/>- When we have given a fixed price<br/> on a new project. | - When we work with high-trust customers,<br/> such as customer that we already delivered well to. <br/>- When the business does not have critical<br/> milestones depending on our deliveries <br/>- When the customer perceives the work delivered<br/> as best-effort |
 
 The following diagram illustrates the differences between the two different kinds of due dates.
 ![diagram1](download.png)
